@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		759486911E12133500338CA6 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 759486901E12133500338CA6 /* Deck.m */; };
 		75A19DD21E113CE7009E5F87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A19DD11E113CE7009E5F87 /* main.m */; };
 		75A19DD51E113CE7009E5F87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A19DD41E113CE7009E5F87 /* AppDelegate.m */; };
 		75A19DD81E113CE7009E5F87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A19DD71E113CE7009E5F87 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 		75A19DE31E113CE7009E5F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75A19DE11E113CE7009E5F87 /* LaunchScreen.storyboard */; };
 		75A19DEE1E113CE7009E5F87 /* CardGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A19DED1E113CE7009E5F87 /* CardGameTests.m */; };
 		75A19DF91E113CE7009E5F87 /* CardGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A19DF81E113CE7009E5F87 /* CardGameUITests.m */; };
+		75A19E081E113DFF009E5F87 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A19E071E113DFF009E5F87 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		759486901E12133500338CA6 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		759486921E12134000338CA6 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		75A19DCD1E113CE7009E5F87 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A19DD11E113CE7009E5F87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75A19DD31E113CE7009E5F87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		75A19DF41E113CE7009E5F87 /* CardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A19DF81E113CE7009E5F87 /* CardGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameUITests.m; sourceTree = "<group>"; };
 		75A19DFA1E113CE7009E5F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75A19E061E113D70009E5F87 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		75A19E071E113DFF009E5F87 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				75A19DE41E113CE7009E5F87 /* Info.plist */,
 				75A19DDC1E113CE7009E5F87 /* CardGame.xcdatamodeld */,
 				75A19DD01E113CE7009E5F87 /* Supporting Files */,
+				75A19E061E113D70009E5F87 /* Card.h */,
+				75A19E071E113DFF009E5F87 /* Card.m */,
+				759486901E12133500338CA6 /* Deck.m */,
+				759486921E12134000338CA6 /* Deck.h */,
 			);
 			path = CardGame;
 			sourceTree = "<group>";
@@ -273,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A19E081E113DFF009E5F87 /* Card.m in Sources */,
 				75A19DD81E113CE7009E5F87 /* ViewController.m in Sources */,
 				75A19DDE1E113CE7009E5F87 /* CardGame.xcdatamodeld in Sources */,
 				75A19DD51E113CE7009E5F87 /* AppDelegate.m in Sources */,
+				759486911E12133500338CA6 /* Deck.m in Sources */,
 				75A19DD21E113CE7009E5F87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +512,7 @@
 				75A19DFF1E113CE7009E5F87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75A19E001E113CE7009E5F87 /* Build configuration list for PBXNativeTarget "CardGameTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +521,7 @@
 				75A19E021E113CE7009E5F87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75A19E031E113CE7009E5F87 /* Build configuration list for PBXNativeTarget "CardGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +530,7 @@
 				75A19E051E113CE7009E5F87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
