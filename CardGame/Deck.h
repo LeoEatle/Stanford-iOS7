@@ -6,13 +6,14 @@
 //  Copyright © 2016年 LeoEatle. All rights reserved.
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef Deck_h
+#define Deck_h
 
 #import <Foundation/Foundation.h>
 #import "Card.h"
 
 @interface Deck : NSObject
+@property (strong, nonatomic) Card *card;
 
 - (void) addCard: (Card *)card atTop:(BOOL)atTop;
 - (Card *)drawRandomCard;

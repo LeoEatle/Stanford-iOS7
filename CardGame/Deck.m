@@ -8,11 +8,12 @@
 
 #import "Deck.h"
 
-@interface Deck()
-@property (strong, nonatomic) NSMutableArray *cards;
-@end
+
+
+
 
 @implementation Deck
+
 
 - (NSMutableArray *)cards
 {
@@ -21,6 +22,7 @@
     }
     return _cards;
 }
+
 
 
 -(void)addCard:(Card *)card atTop:(BOOL)atTop

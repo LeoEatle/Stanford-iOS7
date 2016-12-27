@@ -6,8 +6,8 @@
 //  Copyright © 2016年 LeoEatle. All rights reserved.
 //
 
-#ifndef card_h
-#define card_h
+#ifndef Card_h
+#define Card_h
 #import <Foundation/Foundation.h>
 
 @interface Card : NSObject
